@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Alarm Clock</title>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="container">
+        <!-- Digital Clock Section -->
+        <div id="clock">
+          <div id="current_time">
+            <span id="clock_hrs">--</span>
+            <span>:</span>
+            <span id="clock_min">--</span>
+            <span>:</span>
+            <span id="clock_sec">--</span>
+          </div>
+          <!-- Time Select Section -->
+          <div id="set_time">
+            <form onsubmit="return false;" method="post" name="add_alarm" id="set_time">
+              <div class="row input_row">
+                <input
+                  type="number"
+                  id="hours"
+                  placeholder="00"
+                  min="0"
+                  max="23"
+                />
+                <input
+                  type="number"
+                  id="minuts"
+                  placeholder="00"
+                  min="0"
+                  max="23"
+                />
+              </div>
+              <div class="row button_row">
+                <input type="submit" name="submit" onclick="validate()" id="add_btn"/>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
