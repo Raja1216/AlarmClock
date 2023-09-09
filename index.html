@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
     <title>Alarm Clock</title>
   </head>
   <body>
@@ -20,27 +24,26 @@
           </div>
           <!-- Time Select Section -->
           <div id="set_time">
-            <form onsubmit="return false;" method="post" name="add_alarm" id="set_time">
-              <div class="row input_row">
-                <input
-                  type="number"
-                  id="hours"
-                  placeholder="00"
-                  min="0"
-                  max="23"
-                />
-                <input
-                  type="number"
-                  id="minuts"
-                  placeholder="00"
-                  min="0"
-                  max="23"
-                />
-              </div>
-              <div class="row button_row">
-                <input type="submit" name="submit" onclick="validate()" id="add_btn"/>
-              </div>
-            </form>
+            <div class="row input_row">
+              <input
+                type="number"
+                id="hours"
+                placeholder="00"
+                min="0"
+                max="23"
+              />
+              <input
+                type="number"
+                id="minuts"
+                placeholder="00"
+                min="0"
+                max="59"
+              />
+            </div>
+            <div class="row button_row">
+              <button id="add_btn">Add alarm</button>
+            </div>
+            <div class="activeAlaramList"></div>
           </div>
         </div>
       </div>
