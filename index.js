@@ -160,4 +160,4 @@ const deleteAlarm = (e) => {
 
 window.onload = () => {
     setRootV();
-  };
+};
